@@ -10,7 +10,7 @@ public class OrderProcessor {
 
     // Prosta logika: rabat 10% dla zamówień powyżej 100
     public BigDecimal calculateTotal(BigDecimal basePrice) {
-    /**/
+    /*/
         if (basePrice.compareTo(new BigDecimal("100")) > 0) {
             BigDecimal discount = basePrice.multiply(new BigDecimal("0.10"));
             return basePrice.subtract(discount);
