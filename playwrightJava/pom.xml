@@ -20,7 +20,7 @@
             <groupId>com.microsoft.playwright</groupId>
             <artifactId>playwright</artifactId>
             <version>1.40.0</version>
-            <scope>test</scope>
+          <!--  <scope>test</scope> -->
         </dependency>
 
         <!-- JUnit 5 - framework do pisania i uruchamiania testów -->
