@@ -52,7 +52,7 @@ yarn-error.log*
 
 # Playwright
 node_modules/
-est-results/
+test-results/
 playwright-report/
 /blob-report/
 playwright/.cache/
