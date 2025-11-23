@@ -1,0 +1,19 @@
+/* src/app/app.component.css */
+
+.main-content {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #eee;
+  margin: 20px 0;
+}

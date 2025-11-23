@@ -11,3 +11,22 @@ services:
       - ./react-testing-demo:/app
       # Zapobiegaj nadpisywaniu node_modules w kontenerze przez lokalny folder
       - /app/node_modules
+# === Serwis dla aplikacji ANGULAR ===
+  angular-app:
+    build:
+      context: angular-testing-demo/
+    ports:
+      - "3001:4200" # Mapuj port 3001 na port 4200 (domyślny dla Angulara)
+    volumes:
+      - ./angular-testing-demo:/app
+      - /app/node_modules
+
+  # === Serwis dla aplikacji VUE ===
+  # vue-app:
+  #   build:
+  #     context: vue-testing-demo/
+  #   ports:
+  #     - "3002:5173" # Mapuj port 3002 na port 5173 (domyślny dla Vite/Vue)
+  #   volumes:
+  #     - ./vue-testing-demo:/app
+  #     - /app/node_modules

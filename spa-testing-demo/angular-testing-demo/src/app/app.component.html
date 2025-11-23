@@ -1,0 +1,29 @@
+<!-- src/app/app.component.html -->
+
+<!-- Prosty kontener, aby wycentrować zawartość i nadać jej styl -->
+<div class="main-content">
+
+  <!-- 1. Komponent Greeter -->
+  <!-- Używamy jego selektora 'app-greeter' jak zwykłego tagu HTML. -->
+  <!-- Za pomocą `[name]="'Studencie'"` przekazujemy mu właściwość (property binding). -->
+  <app-greeter [name]="'Studencie'"></app-greeter>
+
+  <!-- Linia oddzielająca dla czytelności -->
+  <hr>
+
+  <!-- 2. Komponent Counter -->
+  <!-- Po prostu umieszczamy jego tag. Nie ma on żadnych właściwości wejściowych. -->
+  <app-counter></app-counter>
+
+  <!-- Linia oddzielająca -->
+  <hr>
+
+  <!-- 3. Komponent AsyncMessageFetcher -->
+  <!-- Również po prostu umieszczamy jego tag. -->
+  <app-async-message-fetcher></app-async-message-fetcher>
+
+</div>
+
+<!-- RouterOutlet jest potrzebny, jeśli używasz routingu w Angularze. -->
+<!-- W naszym prostym przykładzie nie jest on konieczny, ale można go zostawić. -->
+<router-outlet></router-outlet>

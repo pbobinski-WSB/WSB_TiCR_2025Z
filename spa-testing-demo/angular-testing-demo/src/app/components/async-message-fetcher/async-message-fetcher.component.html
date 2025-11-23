@@ -1,0 +1,5 @@
+<div>
+  <button (click)="fetchMessage()">Pobierz wiadomość</button>
+  <p *ngIf="message" data-testid="message-display">{{ message }}</p>
+  <p *ngIf="error" role="alert">{{ error }}</p>
+</div>
