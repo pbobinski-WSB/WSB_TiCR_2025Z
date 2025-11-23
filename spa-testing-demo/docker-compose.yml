@@ -1,6 +1,13 @@
 version: '3.8'
 services:
+  # === Serwis dla aplikacji REACT ===
   react-app:
-    build: .
+    build:
+      context: react-testing-demo/ 
     ports:
-      - "3000:80"
+      - "3000:3000" # Mapuj port 3000 na swoim komputerze do portu 3000 w kontenerze
+    volumes:
+      # Synchronizuj kod z folderu react-testing-demo z folderem /app w kontenerze
+      - ./react-testing-demo:/app
+      # Zapobiegaj nadpisywaniu node_modules w kontenerze przez lokalny folder
+      - /app/node_modules
