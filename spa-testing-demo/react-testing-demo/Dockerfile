@@ -1,5 +1,5 @@
 # /moje-projekty-spa/react.Dockerfile
-FROM node:18-alpine
+FROM node:20-alpine
 
 # Ustaw katalog roboczy wewnątrz kontenera
 WORKDIR /app

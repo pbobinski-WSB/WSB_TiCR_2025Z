@@ -22,11 +22,11 @@ services:
       - /app/node_modules
 
   # === Serwis dla aplikacji VUE ===
-  # vue-app:
-  #   build:
-  #     context: vue-testing-demo/
-  #   ports:
-  #     - "3002:5173" # Mapuj port 3002 na port 5173 (domyślny dla Vite/Vue)
-  #   volumes:
-  #     - ./vue-testing-demo:/app
-  #     - /app/node_modules
+  vue-app:
+    build:
+      context: vue-testing-demo/
+    ports:
+      - "3002:5173" # Mapuj port 3002 na port 5173 (domyślny dla Vite/Vue)
+    volumes:
+      - ./vue-testing-demo:/app
+      - /app/node_modules
