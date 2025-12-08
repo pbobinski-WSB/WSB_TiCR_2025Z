@@ -64,3 +64,5 @@ playwright/.auth/
 
 # Vitest
 __screenshots__/
+
+target/

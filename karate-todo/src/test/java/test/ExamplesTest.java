@@ -11,7 +11,7 @@ class ExamplesTest {
     void testParallel() {
         Results results = Runner.path("classpath:app/ui/hybrid")
                 //.outputCucumberJson(true)
-                .parallel(1);
+                .parallel(2);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
 
