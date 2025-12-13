@@ -13,7 +13,7 @@ def main():
 
     assert title == 'Our Events | Python.org'
 
-    driver.implicitly_wait(0.5)
+    driver.implicitly_wait(3.5)
 
 #    print(driver.page_source)
 

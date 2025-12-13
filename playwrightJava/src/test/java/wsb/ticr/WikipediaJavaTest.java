@@ -24,7 +24,7 @@ class WikipediaJavaTest {
         // Uruchamiamy w trybie z interfejsem, aby było widać, co się dzieje
         browser = playwright.chromium()
                 .launch(new BrowserType.LaunchOptions().setHeadless(false)
-                .setChannel("chrome"));
+                .setChannel("msedge"));
     }
 
     @AfterAll
